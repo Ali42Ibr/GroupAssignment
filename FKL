@@ -1,0 +1,31 @@
+//PriorityQueue and Arrays
+import java.util.*;
+
+//Find Kth Largest Element
+public class FKL {
+    
+    public static int FindKthLargest(int[] array, int k){
+        PriorityQueue<Integer> minHeap = PriorityQueue<Integer>();
+        for(int i = 0; i < array.length; i++){
+            minHeap.add(i);
+            if(minHeap.size() > k){
+                //remove largest element when size is greater than k.
+                minHeap.remove();
+            }
+        }
+        return minHeap.remove();
+    }
+
+    //test method
+    public static boolean testFKL(int[] array, int k){
+        boolean correctElement = "true";
+        Arrays.sort(array);
+        //iterative approach to find kth largest element by sorting array.
+        int n = array[array.length - k];
+        //if it equals the result of our method, return true.
+        if(FindKthLargest(array, k) = n){
+            correctElement = "true";
+        }
+        correctElement = "false";
+    }
+}
