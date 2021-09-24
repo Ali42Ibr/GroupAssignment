@@ -4,6 +4,22 @@ import java.util.Arrays;
 
 public class SortLength {
 
+
+  public static void main(String[] args){
+    String[] arr = {"ali1111111111","ali","ali3"}; //sample array to be sorted by increasing string length
+    String[] sortedArray = sort(arr);
+    for (int i = 0; i < sortedArray.length; i++) //for loop to print the array  
+    System.out.print( sortedArray[i]+ " ");     
+
+
+    if (testSort(sortedArray) == true){
+      System.out.print("\nArray is sorted");
+    } else {
+      System.out.print("Code has failed, array is not sorted");
+    }
+
+  }//End of main
+
   
 
 
