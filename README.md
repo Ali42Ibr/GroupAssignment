@@ -1,6 +1,8 @@
 # GroupAssignment
 
-Feature 1: 
+Feature 1: SortLength
+
+Developed code to sort an array of strings by ascending length. The test checks whether or not the array is in correct order.
 
 Feature 2: FindKthLargest
 
