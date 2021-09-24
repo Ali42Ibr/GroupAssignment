@@ -12,4 +12,6 @@ Feature 3: Drop Duplicates
 
 Developed code to drop duplicates in an int array using a HashSet. Created a test method that verifies if there are repeated values in the output array. Main method runs both functions. 
 
-Feature 4:
+Feature 4: Sort Alphabetically 
+
+Developed code to sort array of Strings allphabetically. Created a test method to compare the strings in the array. 

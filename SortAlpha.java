@@ -4,11 +4,19 @@ import java.util.Arrays;
 
 public class SortAlpha {
 
+  public static void main(String[] args) {
+		String[] arr = {"Adam", "Darren", "Cole", "Georgia", "Bailey" };
+
+    sort(arr);
+  }
+
     
 
   public static String[] sort(String[] arr) {
 
     Arrays.sort(arr);
+		System.out.println(Arrays.toString(arr));
+
     return arr;
   }
 
